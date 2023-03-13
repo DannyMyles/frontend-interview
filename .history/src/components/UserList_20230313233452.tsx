@@ -15,7 +15,7 @@ const UsersList = () => {
     
   return (
     <div className="main-container">
-    <h2> Display for Users List</h2>
+    <h2> Display for User List</h2>
     {
       isLoading && <h2>... Loading</h2>
     }

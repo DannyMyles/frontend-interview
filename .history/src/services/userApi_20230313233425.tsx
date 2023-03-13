@@ -18,8 +18,6 @@ export const usersApi = createApi({
     }),
 }),
 
-// update a user
-
 })
 
 export const { useUsersQuery } = usersApi

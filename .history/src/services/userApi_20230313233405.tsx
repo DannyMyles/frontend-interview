@@ -9,17 +9,12 @@ export const usersApi = createApi({
     baseUrl: baseUrl,
   }),
   //AutoFetch
-  tagTypes: ["User"],
+  tagTypes: ["Campaign"],
   endpoints: (builder) => ({
     //fetch all campaigns
-    users: builder.query<User[], number>({
-      query: () => "/users",
-      providesTags: ["User"],
+    users: builder.query<, number>({
+      query: (pageNo = 0, pageSize = 5) => `/campaigns?pageNo=${pageNo}&pageSize=${pageSize}`,
+      providesTags: ["Campaign"],
     }),
-}),
 
-// update a user
-
-})
-
-export const { useUsersQuery } = usersApi
+});

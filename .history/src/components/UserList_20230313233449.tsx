@@ -1,5 +1,5 @@
 // import SyncLoader from "react-spinners/SyncLoader";
-import { useUsersQuery } from "../services/userApi";
+import { useGetUsersQuery } from "../services/userApi";
 import "./users.css"
 // import { Users } from "../../models/;
 

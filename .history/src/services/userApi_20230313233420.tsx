@@ -14,12 +14,9 @@ export const usersApi = createApi({
     //fetch all campaigns
     users: builder.query<User[], number>({
       query: () => "/users",
-      providesTags: ["User"],
+      providesTags: ["Campaign"],
     }),
-}),
-
-// update a user
-
+})
 })
 
 export const { useUsersQuery } = usersApi

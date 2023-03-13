@@ -17,9 +17,6 @@ export const usersApi = createApi({
       providesTags: ["User"],
     }),
 }),
-
-// update a user
-
 })
 
 export const { useUsersQuery } = usersApi

@@ -8,6 +8,6 @@ export const store = configureStore({
     },
     // Adding midleware for caching of the server data
     middleware: (getDefaultMiddleware) =>
-      getDefaultMiddleware({serializableCheck: false}).concat(usersApi.middleware),
+      getDefaultMiddleware({serializableCheck: false}).concat(campaignsApi.middleware),
   });
   
