@@ -1,0 +1,17 @@
+.main-container{
+    margin:5rem;
+    width: 70%;
+}
+ul{
+    list-style: none;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+}
+li{
+    padding: .5rem;
+    box-shadow: inset;
+}
+h2

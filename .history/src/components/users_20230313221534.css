@@ -1,0 +1,15 @@
+.main-container{
+    margin:5rem;
+    width: 100%;
+}
+ul{
+    list-style: none;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+}
+li{
+    padding: .5rem;
+    box-shadow: inset;
+}

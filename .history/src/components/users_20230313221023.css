@@ -1,0 +1,16 @@
+.main-container{
+    margin:5rem;
+    width: 100vw;
+}
+ul{
+    list-style: none;
+    
+}
+li{
+    padding: 1rem;
+    border-radius: 1;
+    -webkit-border-radius: 1;
+    -moz-border-radius: 1;
+    -ms-border-radius: 1;
+    -o-border-radius: 1;
+}
