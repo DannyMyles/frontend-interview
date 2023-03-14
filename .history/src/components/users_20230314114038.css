@@ -32,7 +32,11 @@ li:nth-child(2) {
     background-color: #17d599;
     color: #333;
     border:1px solid rgb(218, 216, 216);
-    border-radius: .5rem;
+    border-radius: ;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 /* Change the background color on hover */

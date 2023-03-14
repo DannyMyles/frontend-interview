@@ -29,10 +29,10 @@ li:nth-child(2) {
   
   /* Style the list item with a specific class */
   li.special {
-    background-color: #17d599;
+    background-color: #e683d7;
     color: #333;
     border:1px solid rgb(218, 216, 216);
-    border-radius: .5rem;
+    
 }
 
 /* Change the background color on hover */

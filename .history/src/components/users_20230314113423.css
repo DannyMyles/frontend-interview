@@ -9,6 +9,7 @@ ul{
     border: 1px solid #e3e3e3;
     display: flex;
     flex-direction: column;
+    jcc
     padding: 10px;
     box-shadow: 5px 10px #cecece;
     cursor: pointer;
@@ -22,18 +23,17 @@ h2{
     font-size: 1.5rem;
 }
 li:nth-child(2) {
-    background-color: #f6f6f6;
+    background-color: #f0f0f0;
     color: #333;
+    border:1px solid gray;
     border-radius: .5rem;
-  }
+}
   
   /* Style the list item with a specific class */
   li.special {
-    background-color: #17d599;
+    background-color: ff0000;
     color: #333;
-    border:1px solid rgb(218, 216, 216);
-    border-radius: .5rem;
-}
+  }
 
 /* Change the background color on hover */
 li:hover {

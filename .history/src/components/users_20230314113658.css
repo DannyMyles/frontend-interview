@@ -22,14 +22,14 @@ h2{
     font-size: 1.5rem;
 }
 li:nth-child(2) {
-    background-color: #f6f6f6;
+    background-color: #f0f0f0;
     color: #333;
-    border-radius: .5rem;
+    
   }
   
   /* Style the list item with a specific class */
   li.special {
-    background-color: #17d599;
+    background-color: rgb(0, 255, 170);
     color: #333;
     border:1px solid rgb(218, 216, 216);
     border-radius: .5rem;
