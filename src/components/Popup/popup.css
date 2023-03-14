@@ -1,0 +1,41 @@
+.edit-form-wrapper{
+    min-width: 30em;
+    min-height: 60vh;
+    /* margin-top: 2.5em; */
+    padding: 1em 3em 1em 3em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+}
+.input-group{
+    display: grid;
+}
+
+.input-group>input{
+    padding: .75em;
+    border-radius: .5em;
+    outline: none;
+    border: 1px solid black
+}
+
+.submit-button{
+    background-color: #1e7cdb; /* Green */
+    outline: none;
+    min-width: 7em;
+    max-height: 3em;
+    border: none;
+    /* padding: .5em; */
+    border-radius: .5em;
+    position: absolute;
+    bottom: 1em;
+    align-self: flex-end;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit-button>p{
+    font-size: 1.3em;
+}

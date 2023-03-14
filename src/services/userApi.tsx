@@ -16,13 +16,23 @@ export const usersApi = createApi({
       query: () => "/users",
       // providesTags: ["User"],
     }),
+    // update a user
+    updateUser: builder.mutation<User, User>({
+      query: ({ _id, ...rest }) => ({
+        //adding the end point of our api which is the same as the one we used when getting a single campaign
+        url: `/users/${_id}`,
+        // adding the method, that is the PATCH method
+        method: "PATCH",
+        body: rest,
+      }),
+    }),
 }),
 
-// update a user
+
 
 })
 
-export const { useUsersQuery } = usersApi
+export const { useUsersQuery , useUpdateUserMutation } = usersApi
 
 // Export the API slice and use it in your application.
 // export const { useGetUsersQuery, useEditUserMutation } = usersApi;

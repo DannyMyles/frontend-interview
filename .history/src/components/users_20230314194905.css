@@ -10,7 +10,7 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  box-shadow: 2px 3px #f1f1f1;
+  box-shadow: 2px 4px #f1f1f1;
 }
 li {
   padding: 0.5rem;
