@@ -30,7 +30,7 @@ li:nth-child(2) {
   
   /* Style the list item with a specific class */
   li.special {
-    background-color: #1cc9ef;
+    background-color: #69cff8;
     color: #333;
     border:1px solid rgb(218, 216, 216);
     border-radius: .5rem;

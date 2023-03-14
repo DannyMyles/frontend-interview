@@ -24,7 +24,6 @@ const UsersList = () => {
             return (
               
               <ul className="users" key={user.id}>
-                <button className="my-button">Edit</button>
                 <li className="special">Name: {user.name}</li>
                 <li>Email: {user.email}</li>
                 <li>Ocuupation: {user.occupation}</li>
@@ -35,8 +34,7 @@ const UsersList = () => {
           })}
           
         </div>
-      )}
-      
+      )}<button>Edit</button>
     </div>
   );
 };

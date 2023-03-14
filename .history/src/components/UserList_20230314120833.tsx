@@ -22,21 +22,18 @@ const UsersList = () => {
         <div>
           {data.map((user: any) => {
             return (
-              
+
               <ul className="users" key={user.id}>
-                <button className="my-button">Edit</button>
                 <li className="special">Name: {user.name}</li>
                 <li>Email: {user.email}</li>
                 <li>Ocuupation: {user.occupation}</li>
                 <li>Bio: {user.bio}</li>
               </ul>
+              bu
             );
-            
           })}
-          
         </div>
       )}
-      
     </div>
   );
 };
