@@ -4,7 +4,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run:
+## Run the game locally
+
+### `git clone https://github.com/DannyMyles/frontend-interview` 
+
+Clone the repository and run npm install with the commands
+
+```bash
+git clone [https://github.com/DannyMyles/frontend-interview]
+cd frontend-interview
+npm install
+```
 
 ### `npm start`
 
