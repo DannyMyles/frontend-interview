@@ -1,0 +1,43 @@
+.main-container{
+    margin:5rem;
+    width: 70%;
+}
+ul{
+    list-style: none;
+    gap: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #e3e3e3;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 5px 10px #cecece;
+}
+li{
+    padding: .5rem;
+    box-shadow: inset;
+}
+h2{
+    font-size: 1.5rem;
+}
+li:nth-child(2) {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Style the list item with a specific class */
+  li.special {
+    background-color: rgb(0, 255, 170);
+    color: #333;
+  }
+
+/* Change the background color on hover */
+li:hover {
+    background-color: #ccc;
+  }
+  
+  /* Change the font color when clicked */
+  li:active {
+    color: #fff;
+    background-color: #333;
+  }
+  
