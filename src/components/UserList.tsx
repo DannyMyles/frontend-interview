@@ -1,6 +1,10 @@
-import { CSSProperties } from "react";
+import { CSSProperties, useState } from "react";
 import SyncLoader from "react-spinners/SyncLoader";
+import { User } from "../models/users.model";
 import { useUsersQuery } from "../services/userApi";
+import Modal from "./Modal/Modal";
+import Popup from "./Popup/Popup";
+// import SingleUser from "./User";
 import "./users.css";
 
 const override: CSSProperties = {
@@ -11,7 +15,12 @@ const override: CSSProperties = {
   marginBottom: "10rem",
 };
 const UsersList = () => {
-  const { data, isLoading, isSuccess, error } = useUsersQuery(0);
+  const { data, isLoading, isSuccess, error } = useUsersQuery();
+  const [openModal, setOpenModal] = useState<boolean>(false);
+  const [selectedUser, setSelectedUser] = useState<User | null>();
+  
+  // console.log("Data", data);
+  // console.log("Open", openModal)
 
   return (
     <div className="main-container">
@@ -20,23 +29,32 @@ const UsersList = () => {
       {error && <h2>Something went wrong</h2>}
       {isSuccess && (
         <div>
-          {data.map((user: any) => {
+          {data.map((user) => {
             return (
-              
-              <ul className="users" key={user.id}>
-                <button className="my-button">Edit</button>
+              <ul className="users" key={user._id}>
+                <button
+                  className="my-button"
+                  onClick={()=>{ setOpenModal(true); setSelectedUser(user)}}
+                >
+                  Edit
+                </button>
                 <li className="special">Name: {user.name}</li>
                 <li>Email: {user.email}</li>
                 <li>Ocuupation: {user.occupation}</li>
                 <li>Bio: {user.bio}</li>
               </ul>
             );
-            
           })}
-          
+          {openModal && (
+          <Modal setOpenModal={setOpenModal}>
+            <Popup
+              selectedUser={selectedUser}
+              setOpenModal={setOpenModal}
+            />
+          </Modal>
+        )}
         </div>
       )}
-      
     </div>
   );
 };

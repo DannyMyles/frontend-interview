@@ -9,12 +9,12 @@ export const usersApi = createApi({
     baseUrl: baseUrl,
   }),
   //AutoFetch
-  tagTypes: ["User"],
+  // tagTypes: ["User"],
   endpoints: (builder) => ({
     //fetch all campaigns
-    users: builder.query<User[], number>({
+    users: builder.query<User[], void>({
       query: () => "/users",
-      providesTags: ["User"],
+      // providesTags: ["User"],
     }),
 }),
 

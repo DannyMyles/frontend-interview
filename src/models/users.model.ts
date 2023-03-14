@@ -1,6 +1,6 @@
 // name interfaces with capital letters
 export interface User {
-  id: number;
+  _id: number;
   name: string;
   email: string;
   occupation: string;
